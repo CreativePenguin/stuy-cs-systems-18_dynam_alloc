@@ -53,14 +53,18 @@ void free_nullify(struct node *val) {
 struct node * remove_data(struct node *front, int data) {
   struct node * prev = front;
   struct node * next = front->next;
-  if(front->i == data && front->next) {
+  if(front->i == data) {
+    printf("Removing %d\n", front->i);
     free_nullify(front);
-    return front->next;
+    print_list(front);
+    return front->next ? front->next : NULL;
   }
   while(next) {
     if(next->i == data) {
       prev->next = next->next;
+      printf("Removing %d\n", next->i);
       free_nullify(next);
+      print_list(front);
       return front;
     }
     prev = next;
