@@ -1,11 +1,13 @@
 # stuy-cs-systems-18_dynam_alloc  
 > github.com/CreativePenguin/stuy-cs.git  
 Write a simple linked list program. You will need a define a node struct with the following data members:  
-  
-    A piece of data (your choice)  
-    A pointer to the next node  
-    Here's an example of what the struct could look like:  
-        struct node { int i; struct node *next; };  
+ 
+- A piece of data (your choice)  
+- A pointer to the next node  
+- Here's an example of what the struct could look like:  
+```c
+struct node { int i; struct node *next; };
+```
   
 Create the following functions:  
   
