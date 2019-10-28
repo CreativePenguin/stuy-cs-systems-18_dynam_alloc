@@ -1,5 +1,6 @@
 # stuy-cs-systems-18_dynam_alloc  
 > github.com/CreativePenguin/stuy-cs.git  
+
 Write a simple linked list program. You will need a define a node struct with the following data members:  
  
 - A piece of data (your choice)  
